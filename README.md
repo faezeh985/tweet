@@ -1,3 +1,2 @@
 # tweet
-tweet via command line
-enjoy tweeting via command line easily. 
+tweet via command line easily and enjoy.
