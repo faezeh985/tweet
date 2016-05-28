@@ -4,9 +4,11 @@ import requests
 from requests_oauthlib import OAuth1
 import configparser 
 import sys
+import os
 
 config = configparser.ConfigParser()
-config.read('twitter_info.ini')
+home = os.path.expanduser('~')
+config.read(home + '/bin/twitter_info.ini')
 my_info = dict()    
 for option in config.options('twitter'):
     my_info[option] = config.get('twitter', option)
